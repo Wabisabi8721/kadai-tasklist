@@ -1,0 +1,17 @@
+<ul class="media-list">
+    <li class="media">
+      <div class="media-body">
+        <div>
+          <% tasks.each do |task| %>
+            <tr>
+              <td><%= link_to task.status,task %></td>
+              <td><%= link_to task.content,task %></td>
+            </tr>
+           <% end %>
+        </div>
+      </div>
+    </li>
+  <div>
+    <%= paginate tasks %>
+  </div>
+</ul>
