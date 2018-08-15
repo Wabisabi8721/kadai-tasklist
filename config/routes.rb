@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to:'tasks#index'
+  root to: 'tasks#index' #/にアクセスした時と/tasksにアクセスしたときは同じ
   
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
